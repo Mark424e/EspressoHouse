@@ -1,0 +1,212 @@
+<!-- Instruktion til webbrowser om at vi kører HTML5 -->
+<!DOCTYPE html>
+
+<!-- html starter og slutter hele dokumentet / lang=da: Fortæller siden er på dansk -->
+<html lang="da">
+
+<!-- I <head> har man opsætning - det ser brugeren ikke, men det fortæller noget om siden -->
+<head>
+
+    <meta charset="utf-8"> <meta charset="utf-8">
+    <title>Menuen</title>
+    <meta name="robots" content="All">
+    <meta name="author" content="Dream Team">
+    <meta name="copyright" content="Copyright Dream Team">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Chonburi&family=Karla&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Kaffe, kage og mad menu">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http:/www.domain.dk">
+    <meta property="og:image" content="https://www.domain.dk/img.jpg">
+    <meta property="og:description" content="En oversigt over hvilke varme drikke, kolde drikke, bagværk og mad vi servere">
+    <meta property="og:locale" content="da_DK">
+
+    <!-- Titel som ses oppe i browserens tab mv. -->
+    <title>Espresso House's Menu</title>
+
+    <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<!-- i <body> har man alt indhold på siden som brugeren kan se -->
+<body style="background-color: #c1d6cc">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid container-lg ps-3 pe-3">
+        <a class="navbar-brand" href="index.html"><img src="images/EspressoHouseLogo.svg" alt="Logo" width="100"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown ps-2 pe-2">
+                    <a class="nav-link navbarDropdown" href="menuen.html" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Menuen
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Produktinformation</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="fejl404.html">Allergenguide</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="menuen.html">Menukort</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ps-2 pe-2">
+                    <a class="nav-link navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Vores Kaffe
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">At Arbejde Hos Os</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Bæredygtighed</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ps-2 pe-2">
+                    <a class="nav-link navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Om Os
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Kaffe Derhjemme</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Vores Risteri</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Vores Filterkaffe</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Vores Espresso</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Vores Kaffebønder</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Vores Kaffeskole</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown ps-2 pe-2">
+                    <a class="nav-link navbarDropdown" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        Kontakt
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Find Os</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Kontakt</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item ps-2 pe-2">
+                    <a class="nav-link" href="#">App</a>
+                </li>
+                <li class="nav-item ps-2 pe-2">
+                    <a class="nav-link" href="#">Gavekort</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="text-center pt-5">
+        <h1>Hvad har vi på menuen?</h1>
+    </div>
+    <div class="row ps-5 pe-5">
+        <div class="col-lg-3 col-md-6">
+            <div class="card mt-5">
+                <img src="images/warmdrinkespresso.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="cardtitle">Varme drikke</h5>
+                    <p class="card-text">Vores kaffer bliver alle lavet på vores egne espressobønner, chokoladepindene er fra Sv. Michelsen og så har vi også Chailatte og økologiske teer. Vi benytter os af de bedste råvarer for at sikre den høje kvalitet.</p>
+                </div>
+                <div class="text-center m-2 p-2">
+                    <a href="#" class="btn-menu pt-2 pb-2 ps-4 pe-4">Varme drikke</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card mt-5">
+                <img src="images/colddrinksespresso.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="cardtitle">Kolde drikke</h5>
+                    <p class="card-text">Hos Espresso House har vi et stort udvalg af kolde drikke; bl.a. vores ikoniske Frapino og Islatte, isteer og lemonader, som alle bliver lavet ved bestillingen samt kolde drikke på flaske.</p>
+                </div>
+                <div class="text-center m-2 p-2">
+                    <a href="#" class="btn-menu pt-2 pb-2 ps-4 pe-4">Kolde drikke</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card mt-5">
+                <img src="images/foodespressohouse.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="cardtitle">Mad</h5>
+                    <p class="card-text">Hver morgen står vi og smør vores lækre sandwiches, pakker salaterne og yoghurterne, så vi har til hele dagens måltider.</p>
+                </div>
+                <div class="card-btn text-center m-2 p-2">
+                    <a href="#" class="btn-menu pt-2 pb-2 ps-5 pe-5">Mad</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card mt-5">
+                <img src="images/bakedespresso.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="cardtitle">Bagværk</h5>
+                    <p class="card-text">Kagerne kommer alle sammen fra Espresso House Bakery, som ligger i Malmø. Vi kan herved kontrollere alle ingredienserne i kagerne, så vi er 100% sikre på, hvad vi serverer for vores gæster.</p>
+                </div>
+                <div class="text-center m-2 p-2">
+                   <a href="#" class="btn-menu pt-2 pb-2 ps-4 pe-4">Bagværk</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="mt-4">
+    <div class="container-fluid">
+        <div class="align-items-center">
+            <div class="col-lg-12 pt-4">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-auto p-2 text-center"><a href="#">Privacy Notice</a></div>
+                    <div class="col-12 col-lg-auto p-2 text-center"><a href="#">Cookie Policy</a></div>
+                    <div class="col-12 col-lg-auto p-2 text-center"><a href="#">FAQ</a></div>
+                    <div class="col-12 col-lg-auto p-2 text-center"><a href="#">Smiley Rapporter</a></div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 text-center pb-4">
+                <a href="https://www.facebook.com/espressohousedanmark/" target="_blank"><i class="fa-brands fa-facebook-square p-2"></i></a>
+                <a href="https://www.instagram.com/espressohouse_danmark/?hl=en" target="_blank"><i class="fa-brands fa-instagram p-2"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
